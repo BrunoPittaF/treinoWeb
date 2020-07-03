@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #6b6b6bde;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    padding: 10px 60px;
+    position: fixed;
+    top: 0;
+    align-items: center;
+
+}
+
+header picture img{
+    width: 100px;
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+}
+header nav ul a{
+    text-decoration: none;
+    color: black;
+    transition: filter 0.5s;
+}
+
+header nav ul a:hover{
+    filter: opacity(10%);
+}
+header nav ul a li{
+    margin: 0px 8px;
+}
+
+#firstSection, .music{
+    margin-top: 120px;
+    display: flex;
+    padding: 0px 20px;
+}
+
+.music {
+    margin-top: 20px;
+    background-color: #240115;
+    color: #ffffffe3;
+    padding: 20px;
+}
+
+.music .colection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;    
+}
+
+.music .colection .video{
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+
+.music .colection .video iframe{
+    width: 100%;
+}
+
+section .text{
+    flex: 1;
+    margin-right: 20px;
+
+}
+
+section .text p{
+    margin: 5px 0px;
+    text-align: justify;
+}
+
+
+section picture{
+    width: 50%;
+}
+
+section picture img{
+    width: 100%;
+}
