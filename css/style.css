@@ -47,26 +47,24 @@ header nav ul a li{
 }
 
 .music {
+    background-image: url(../assets/bg1.jpg);
     margin-top: 20px;
     background-color: #240115;
     color: #ffffffe3;
     padding: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.music .colection{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex: 1;    
-}
 
-.music .colection .video{
-    width: 100%;
+.music .video{
+    width: 50%;
     margin-bottom: 20px;
 
 }
 
-.music .colection .video iframe{
+.music  .video iframe{
     width: 100%;
 }
 
@@ -88,4 +86,77 @@ section picture{
 
 section picture img{
     width: 100%;
+}
+
+.classes{
+    padding: 20px 40px;
+    background-color: grey;
+}
+
+.classes .grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.classes .grid figure{
+    width: 220px;
+}
+
+.classes .grid figure .modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+   /* display: none;*/
+}
+
+.classes .grid figure .modal:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.classes .grid figure .modal .conteudo-modal {
+    width: 500px;
+    height: 200px;
+    margin: 200px auto;
+    background-color: #ffffffe3;
+    position: relative;
+    padding: 20px;
+}
+
+.classes .grid figure .modal .conteudo-modal p {
+    margin: 10px 0px;
+}
+.classes .grid figure .modal .conteudo-modal .fechar{
+    position: absolute;
+    right: -10px;
+    top: -32px;
+    background-color: black;
+    border-radius: 100%;
+    padding: 10px;
+    color: #f3f300;
+    text-decoration: none;
+
+}
+
+.classes .grid figure picture img{
+    height: 330px;
+}
+
+.classes .grid figure figcaption{
+    height: 100px;
+    background-color: #00000073;
+    margin-top: -4px;
+    padding: 10px;
+}
+
+.classes .grid figure figcaption a{
+    text-decoration: none;
+    color: rgba(2, 2, 168, 0.705);
+}
+
+.classes .grid figure figcaption a:hover{
+    color: orangered;
 }
